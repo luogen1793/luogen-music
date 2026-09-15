@@ -19,7 +19,7 @@ jobs:
 
       - name: Download gradle wrapper
         run: |
-          gradle wrapper --gradle-version 8.5
+          gradle wrapper --gradle-version 8.7
 
       - name: Build Release APK
         run: ./gradlew assembleRelease
