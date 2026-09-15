@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 小组件封面占位：渐变圆角 + 音乐音符（替换原先的白色播放三角，观感更完整） -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="44dp"
+    android:height="44dp"
+    android:viewportWidth="44"
+    android:viewportHeight="44">
+    <path
+        android:pathData="M2,14 C2,7.37 7.37,2 14,2 h16 C36.63,2 42,7.37 42,14 v16 C42,36.63 36.63,42 30,42 h-16 C7.37,42 2,36.63 2,30 z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startColor="#8A5CF6"
+                android:centerColor="#5B3DB8"
+                android:endColor="#2E1E5E"
+                android:angle="315" />
+        </aapt:attr>
+    </path>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M17,10 v12.55 c-0.75,-0.4 -1.63,-0.55 -2.5,-0.55 -2.9,0 -5.5,2.02 -5.5,4.5 s2.6,4.5 5.5,4.5 5.5,-2.02 5.5,-4.5 V17 h7 v-7 z" />
+</vector>

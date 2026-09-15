@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Luogen" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/lg_bg_deep</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:windowDisablePreview">false</item>
+    </style>
+
+    <!-- 通知/小组件的深色样式 -->
+    <style name="WidgetDark" parent="android:style/TextAppearance.Material">
+        <item name="android:textColor">@color/lg_text</item>
+    </style>
+</resources>

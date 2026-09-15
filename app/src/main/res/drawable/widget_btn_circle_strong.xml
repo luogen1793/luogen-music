@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 小组件播放/暂停主按钮：更亮的圆形强调底 + 明显描边 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#45FFFFFF" />
+    <stroke
+        android:width="1.5dp"
+        android:color="#66FFFFFF" />
+</shape>

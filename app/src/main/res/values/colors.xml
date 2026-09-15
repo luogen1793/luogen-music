@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 酷狗概念版风格的主色调：流光紫 ➜ 星云青 -->
+    <color name="lg_primary">#E040FB</color>
+    <color name="lg_secondary">#4DD0E1</color>
+    <color name="lg_bg_deep">#0B0B14</color>
+    <color name="lg_bg_panel">#1A1A2E</color>
+    <color name="lg_glass">#33FFFFFF</color>
+    <color name="lg_glass_border">#66FFFFFF</color>
+    <color name="lg_text">#F5F5FF</color>
+    <color name="lg_text_dim">#9AA0B4</color>
+    <color name="lg_pink">#FF5C8D</color>
+    <color name="lg_amber">#FFC24B</color>
+    <color name="lg_green">#2EE6A8</color>
+    <color name="lg_black">#000000</color>
+    <color name="ic_launcher_background">#0B0B14</color>
+</resources>

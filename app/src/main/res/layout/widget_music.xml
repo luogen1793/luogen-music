@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 4×1 桌面小组件：封面 + 歌名/歌手 + 上一曲/播放暂停/下一曲/播放模式。
+     深色渐变圆角背景 + 圆形毛玻璃按钮，整体更精致。
+     注意：小组件由 Launcher 进程 inflate，不能使用 ?android:attr 主题属性（部分系统解析失败导致不显示）。 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/widget_bg"
+    android:padding="12dp"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/widget_cover"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:background="@drawable/widget_cover_bg"
+        android:padding="1dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/widget_cover_placeholder"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="4dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/widget_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:text="发现音乐" />
+
+        <TextView
+            android:id="@+id/widget_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:textColor="#C9CEF0"
+            android:textSize="10sp"
+            android:text="—" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/widget_prev"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="2dp"
+        android:padding="0dp"
+        android:background="@drawable/widget_btn_circle"
+        android:scaleType="fitCenter"
+        android:src="@drawable/widget_ic_prev"
+        android:contentDescription="上一曲" />
+
+    <ImageButton
+        android:id="@+id/widget_play"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="6dp"
+        android:padding="0dp"
+        android:background="@drawable/widget_btn_circle_strong"
+        android:scaleType="fitCenter"
+        android:src="@drawable/widget_ic_play"
+        android:contentDescription="播放/暂停" />
+
+    <ImageButton
+        android:id="@+id/widget_next"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="6dp"
+        android:padding="0dp"
+        android:background="@drawable/widget_btn_circle"
+        android:scaleType="fitCenter"
+        android:src="@drawable/widget_ic_next"
+        android:contentDescription="下一曲" />
+
+    <ImageButton
+        android:id="@+id/widget_mode"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="6dp"
+        android:padding="0dp"
+        android:background="@drawable/widget_btn_circle"
+        android:scaleType="fitCenter"
+        android:src="@drawable/widget_ic_mode_sequence"
+        android:contentDescription="播放模式" />
+</LinearLayout>
